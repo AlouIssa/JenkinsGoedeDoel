@@ -30,6 +30,7 @@ class GoedeDoelTest {
 	void doelenMetDezelfdeNaamZijnGelijk(){
 		assertThat(doel).isEqualTo(new GoedeDoel(NAAM));
 	}
+
 	@Test
 	void doelenMetVerschillendeNaamZijnVerschillend(){
 		assertThat(doel).isNotEqualTo(new GoedeDoel("WWF"));
@@ -39,5 +40,10 @@ class GoedeDoelTest {
 	void doelVerschiltVanEenObjectMetEenAnderTyp(){
 		assertThat(doel).isNotEqualTo(BigDecimal.ZERO);
 	}
+
+//	@Test
+//	void gelijkeDoelGevenHebbenDezelfdeHashCode(){
+//		assertThat()
+//	}
 
 }
