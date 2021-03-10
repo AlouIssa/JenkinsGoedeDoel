@@ -32,4 +32,9 @@ class GoedeDoelTest {
 		assertThat(doel).isNotEqualTo(new GoedeDoel("WWF"));
 	}
 
+	@Test
+	void doelVerschiltVanEenObjectMetEenAnderTyp(){
+		assertThat(doel).isNotEqualTo(1L);
+	}
+
 }
