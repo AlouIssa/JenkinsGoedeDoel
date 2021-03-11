@@ -10,6 +10,10 @@ public class GoedeDoel {
 	private final String naam;
 	private BigDecimal opgebracht = BigDecimal.ZERO;
 
+	/**
+	 * Maakt een GoedeDoel object
+	 * @param naam De naam van het goede doel
+	 */
 	public GoedeDoel(String naam) {
 		this.naam = naam;
 	}
